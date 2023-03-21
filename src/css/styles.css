@@ -1,4 +1,121 @@
+
 body {
-  background-color: pink;
+  background-color: whitesmoke;
 }
 
+header {
+  background-color: #43AA8B;
+  font-family: 'semplicita', sans-serif;
+  height: 33%; 
+  padding: 10%;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
+}
+
+footer {
+  background-color: whitesmoke;
+  height: 33%;
+  padding: 20%;
+  width: 100%;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20%;
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+  padding: 2%;
+}
+
+#imageOne {
+  border: 3px solid #F3722C !important;
+  height: 350px;
+  width: 350px;
+}
+
+#imageTwo {
+  border: 3px solid #F8961E !important;
+  height: 350px;
+  width: 350px;
+}
+
+#imageThree {
+  border: 3px solid #F9844A !important;
+  height: 350px;
+  width: 350px;
+}
+
+#nameOne {
+  font-weight: bold;
+  text-align: center;
+}
+
+#nameTwo {
+  font-weight: bold;
+  text-align: center;
+}
+
+#nameThree {
+  font-weight: bold;
+  text-align: center;
+}
+
+#button {
+  margin-left: 40%w;
+  background-color: #43AA8B;
+  border: 2px, solid, white;
+  
+}
+
+.led-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.led-button:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: pink;
+  box-shadow: 0 0 10px grey;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.led-button:active:before {
+  opacity: 1;
+}
+
+#mealInput {
+  margin-left: 35%;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
