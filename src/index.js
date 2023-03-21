@@ -25,7 +25,7 @@ function runapp() {
 
 function display(result)
 {
-  /*
+  
   let itemOne = document.getElementsByClassName("itemOne");
   let itemTwo = document.getElementsByClassName("itemTwo");
   let itemThree = document.getElementsByClassName("itemThree");
@@ -35,11 +35,6 @@ function display(result)
   itemTwo = Array.from(itemTwo);
   itemThree = Array.from(itemThree);
   const allItems = [itemOne, itemTwo, itemThree];
-
-  //console.log(allItems[0][0].display);
-
-  //allItems[0][0].display = display.none;
-*/
 
     const imgOne = document.getElementById("imageOne");
     const imgTwo = document.getElementById("imageTwo");
@@ -60,16 +55,32 @@ function display(result)
     imgThree.src = result.meals[2].strMealThumb;
 
     imgOne.addEventListener("click", () => {
+      hider(0, allItems);
       detail(idOne)
     });
     imgTwo.addEventListener("click", () => {
+      hider(1, allItems);
       detail(idTwo)
     });
     imgThree.addEventListener("click", () => {
+      hider(2, allItems);
       detail(idThree)
     });
 }
 
+function hider(id, allItems)
+{
+for(let h = 0; h < allItems.length; h++)
+{
+  if(h != id)
+  {
+    for(let i = 0; i < allItems[i].length; i++)
+    {
+      allItems[h][i].style.display = "none";
+    }
+  }
+}
+}
 function detail(id)
 {
   const recipeCall = mealService.detailedCall(id);

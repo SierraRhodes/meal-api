@@ -12,34 +12,35 @@
   </header>
 <div id="choices" class="container">
   <div class="image">
-    <div class = "itemOne">
+    <form class = "itemOne">
     <p id= "nameOne"></p>  
-    <img id= "imageOne" src="//:0">
-  </div>
+    <!-- <img id= "imageOne" src="//:0"> -->
+    <img id= "imageOne">
+  </form>
   </div>
   <div class="image">
-    <div class = "itemTwo">
+    <form class = "itemTwo">
     <p id= "nameTwo"></p>
-    <img id= "imageTwo" src="//:0">
-  </div>
+    <!-- <img id= "imageTwo" src="//:0"> -->
+    <img id= "imageTwo">
+  </form>
   </div>
   <div class="image">
-    <div class = "itemThree">
-   <p id= "nameThree"></p>
-   <img id= "imageThree" src="//:0">
-  </div>
+    <form class = "itemThree">
+      <p id= "nameThree"></p>
+      <!-- <img id= "imageThree" src="//:0"> -->
+      <img id= "imageThree">
+    </form>
   </div>
 
 <ul id = "ingredientsList">
 
 </ul>
 </div>
-<form>
-  <label for="ingredient"></label>
-  <input type="text" id= "mealInput">
-  <button type="submit" class="led-button" id="button">Press Me</button>
-  <!-- <button type="reset" class="led-button" id="button">New Ingredient</button> -->
-</form>
-<footer>
+<label for="ingredient"></label>
+<input type="text" id= "mealInput" placeholder="Example: Beef">
+<button type="submit" class="led-button" id="button">Show Recipes</button>
+<button type="reset" value="Reset" onClick="window.location.href=window.location.href" class="led-button" id="button">Clear</button>
 </body>
 </html>
+
