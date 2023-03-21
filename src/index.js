@@ -122,5 +122,5 @@ Order.prototype.finish = function () {
     });
     string += `\n Your total is ${totalprice} dollars.\n Thank you for dining with us today.`;
     return string;
-
+testing testing 1 2 3
 */
