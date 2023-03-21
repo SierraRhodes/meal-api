@@ -25,6 +25,22 @@ function runapp() {
 
 function display(result)
 {
+  /*
+  let itemOne = document.getElementsByClassName("itemOne");
+  let itemTwo = document.getElementsByClassName("itemTwo");
+  let itemThree = document.getElementsByClassName("itemThree");
+
+  //turn all of our elements in classes into an array of elements
+  itemOne = Array.from(itemOne);
+  itemTwo = Array.from(itemTwo);
+  itemThree = Array.from(itemThree);
+  const allItems = [itemOne, itemTwo, itemThree];
+
+  //console.log(allItems[0][0].display);
+
+  //allItems[0][0].display = display.none;
+*/
+
     const imgOne = document.getElementById("imageOne");
     const imgTwo = document.getElementById("imageTwo");
     const imgThree = document.getElementById("imageThree");
